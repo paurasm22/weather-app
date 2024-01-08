@@ -31,7 +31,7 @@ const handleSearch=async()=>{
   if (searchValue==="") {
     return 0 ;
   }
-  let apikey="08a5fb13eb4a4917a90113343232512"
+  let apikey=""
 let url=`http://api.weatherapi.com/v1/current.json?key=${apikey}&q=${searchValue}`
 let response = await fetch(url);
 let data  = await response.json()
